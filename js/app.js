@@ -1,28 +1,17 @@
-var container = document.querySelector('.tictactoe');
-var startButton = document.getElementById('startButton');
-startButton.addEventListener('click', start);
-container.addEventListener('click',onCellClick);
+// cuando esta totalmente cargado
+window.onload = function() {
+  var board = document.querySelector('.board-js');
 
-function onCellClick(event) {
-    var target = event.target;
-    var dataset = target.dataset;
-    // console.log(dataset);
-    // console.log('target',target);
-    if (dataset && dataset.row) {
-        console.log('pos', dataset.row, dataset.column)
+  board.addEventListener('click', addX);
+};
+var centinel = true;
+function addX(event) {
+  if (event.target.matches('td') && event.target.textContent === '') {
+    if (centinel) { 
+      event.target.textContent = 'x';
+    } else { 
+      event.target.textContent = '0';
     }
+    centinel = !centinel;
+  }
 }
-
-function ticTacToe() {
-    this.matrix = [
-        [null, null, null],
-        [null, null, null],
-        [null, null, null],
-    ]
-}
-
-function start() {
-    console.log('start');
-}
-// on load
-start();
