@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+.tictactoe {
+    background-color: grey;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+    width: 300px;
+}
+.tictactoe .row {
+    height: 100px;
+}
+.tictactoe .row:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.tictactoe .row .cell {
+    float: left;
+    height: 100px;
+    padding-top: 34px;
+    text-align: center;
+    width: 100px;
+}
+.tictactoe .cell:not(:last-child) {
+    border-right: 1px solid black;
+}
