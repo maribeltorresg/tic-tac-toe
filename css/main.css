@@ -3,18 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-.board {
-    border-collapse: collapse; 
-    margin: 100px auto 0;
+
+body {
+    font-family: Arial, Helvetica, sans-serif
 }
-.board td {
-    border: 1px solid #000;
-    width: 100px;
-    height: 100px;
+
+table {
+    background-color: red;
+    cursor: pointer;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+td {
+    background-color: yellow;
+    font-family: monospace;
+    font-size: 48px;
+    height: 48px;
+    line-height: 48px;
     text-align: center;
-    font-size: 60px;
-    font-weight: bold;
+    width: 48px;
 }
-.board td:hover {
-    background-color: gray;
+
+button {
+    margin: 10px 5px;
+    padding: 20px;
+    width: 152px;
+}
+
+#indicator {
+    font-size: 18px;
+    padding-left: 50px;
 }
