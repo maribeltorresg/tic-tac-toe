@@ -1,37 +1,35 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial;
 }
 
 table {
     background-color: red;
     cursor: pointer;
-    margin: 50px;
-    margin-bottom: 0;
+    margin: auto;
 }
 
 td {
     background-color: yellow;
     font-family: monospace;
     font-size: 48px;
+    font-weight: bold;
     height: 48px;
     line-height: 48px;
     text-align: center;
     width: 48px;
 }
-
-button {
-    margin: 10px 5px;
-    padding: 20px;
-    width: 152px;
+#restart {
+    display: block;
+    margin: 30px auto;
+    width: 200px;
 }
 
 #indicator {
-    font-size: 18px;
-    padding-left: 50px;
+    text-align: center;
 }
