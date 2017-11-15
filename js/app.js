@@ -31,7 +31,7 @@ window.onload = function() {
       
       td.innerHTML = symbol;
 
-      positions[index].forEach(function (position) {
+      positions[index].forEach(function(position) {
         if (obj[position + '-' + symbol]) {
           obj[position + '-' + symbol] += 1;
         }
@@ -40,9 +40,9 @@ window.onload = function() {
         }
       });
 
-      Object.keys(obj).forEach(function (key, index) {
+      Object.keys(obj).forEach(function(key, index) {
         var value = obj[key];
-        if (value == 3) {
+        if (value === 3) {
           winner = symbol;
         }
       });
@@ -63,7 +63,7 @@ window.onload = function() {
     });
   });
 
-  document.getElementById('restart').addEventListener('click', function (){
+  document.getElementById('restart').addEventListener('click', function() {
     window.location.reload();
   });
 };
